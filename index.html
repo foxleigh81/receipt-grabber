@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Example Page</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <article class="container">
+    <header class="jumbotron">
+      <h1 class="display-3">An example page to run tests on</h1>
+      <p class="lead">Hiya. This is a super-quick page built with bootstrap and jQuery just so I can actually run the tests I am writing.</p>
+      <p>Feel free to examine the source code of this page if you like but it won't tell you much as I never use Bootstrap or jQuery and normally I'd make more effort with making the page responsive and accessible</p>
+    </header>
+    <section class="tabs mb-3">
+      <ul class="nav">
+        <li class="nav-item" data-hook="home-tab"><a class="nav-link" href="">Home</a></li>
+        <li class="nav-item" data-hook="ingredients-tab"><a class="nav-link" href="">Ingredients</a></li>
+      </ul>
+    </section>
+    <main>
+      <div class="container">
+        <div class="row">
+          <section class="col-4" data-hook="ingredients-list">
+            <ul class="list-group">
+              <li class="list-group-item" data-hook="ingredients-list-item"><h3 class="h5">Cinnamon</h3></li>
+              <li class="list-group-item" data-hook="ingredients-list-item"><h3 class="h5">Apple</h3></li>
+              <li class="list-group-item" data-hook="ingredients-list-item"><h3 class="h5">Clove</h3></li>
+              <li class="list-group-item" data-hook="ingredients-list-item"><h3 class="h5">Tumeric</h3></li>
+            </ul>
+          </section>
+          <div class="col-8 ingredients-detail-container">
+            <section class="card" data-hook="ingredients-detail">
+              <div class="card-body">
+                <h4 class="card-title">Cinnamon details</h4>
+                <p class="card-text">Exercitation reprehenderit sit occaecat est. Voluptate proident ipsum ut ex sit. Cillum commodo voluptate excepteur Lorem. Nostrud labore consequat occaecat sit consequat veniam. Consectetur excepteur sint do enim ex ut minim et dolore labore adipisicing. Velit reprehenderit eiusmod aliquip laboris pariatur nostrud veniam laboris incididunt tempor tempor esse laborum nisi. Ad ullamco fugiat ut adipisicing qui nulla exercitation minim eu reprehenderit culpa qui velit.</p>
+              </div>
+            </section>
+            <section class="card" data-hook="ingredients-detail">
+              <div class="card-body">
+                <h4 class="card-title">Apple details</h4>
+                <p class="card-text">Exercitation reprehenderit sit occaecat est. Voluptate proident ipsum ut ex sit. Cillum commodo voluptate excepteur Lorem. Nostrud labore consequat occaecat sit consequat veniam. Consectetur excepteur sint do enim ex ut minim et dolore labore adipisicing. Velit reprehenderit eiusmod aliquip laboris pariatur nostrud veniam laboris incididunt tempor tempor esse laborum nisi. Ad ullamco fugiat ut adipisicing qui nulla exercitation minim eu reprehenderit culpa qui velit.</p>
+              </div>
+            </section>
+            <section class="card" data-hook="ingredients-detail">
+              <div class="card-body">
+                <h4 class="card-title">Clove details</h4>
+                <p class="card-text">Exercitation reprehenderit sit occaecat est. Voluptate proident ipsum ut ex sit. Cillum commodo voluptate excepteur Lorem. Nostrud labore consequat occaecat sit consequat veniam. Consectetur excepteur sint do enim ex ut minim et dolore labore adipisicing. Velit reprehenderit eiusmod aliquip laboris pariatur nostrud veniam laboris incididunt tempor tempor esse laborum nisi. Ad ullamco fugiat ut adipisicing qui nulla exercitation minim eu reprehenderit culpa qui velit.</p>
+              </div>
+            </section>
+            <section class="card" data-hook="ingredients-detail">
+              <div class="card-body">
+                <h4 class="card-title">Tumeric details</h4>
+                <p class="card-text">Exercitation reprehenderit sit occaecat est. Voluptate proident ipsum ut ex sit. Cillum commodo voluptate excepteur Lorem. Nostrud labore consequat occaecat sit consequat veniam. Consectetur excepteur sint do enim ex ut minim et dolore labore adipisicing. Velit reprehenderit eiusmod aliquip laboris pariatur nostrud veniam laboris incididunt tempor tempor esse laborum nisi. Ad ullamco fugiat ut adipisicing qui nulla exercitation minim eu reprehenderit culpa qui velit.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </article>
+</body>
+</html>

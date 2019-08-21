@@ -1,0 +1,32 @@
+{
+  "name": "receipt-grabber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 9000",
+    "test": "cucumber-js --require cucumber.conf.js --require step_definitions --format node_modules/cucumber-pretty",
+    "start-all": "concurrently \"npm start\" \"npm test\" --kill-others || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxleigh81/receipt-grabber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foxleigh81/receipt-grabber/issues"
+  },
+  "homepage": "https://github.com/foxleigh81/receipt-grabber#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "chromedriver": "^75.0.0",
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.2",
+    "nightwatch": "^1.1.12",
+    "nightwatch-api": "^2.3.0"
+  }
+}
