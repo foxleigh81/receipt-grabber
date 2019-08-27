@@ -1,8 +1,10 @@
-[
+const env = require('dotenv')
+
+module.exports = [
   {
-    "name": "",
-    "url" : "",
-    "username": "",
-    "password": "",
+    "name": "Adobe",
+    "url" : "https://www.adobe.com",
+    "username": env.ADOBE_UN,
+    "password": env.ADOBE_PW
   }
 ]
