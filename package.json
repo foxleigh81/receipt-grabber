@@ -21,7 +21,7 @@
   "dependencies": {
     "concurrently": "^4.1.1",
     "dotenv": "^8.1.0",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.2"
   },
   "devDependencies": {
     "chromedriver": "^75.0.0",
